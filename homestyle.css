@@ -74,6 +74,16 @@ p{
   .box{
     width: 60px;
     border-radius: 16px;
+    cursor: pointer;
+  }
+  
+  .box:hover{
+    opacity: 0.85;
+    transform: scale(1.02);
+  }
+  
+  .box:active{
+    opacity: 0.7;
   }
   
   .text{
