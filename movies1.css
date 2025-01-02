@@ -1,0 +1,176 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+
+
+#background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 90%);
+    z-index: -1;
+}
+
+.other-pic {
+    justify-content: space-around; /* 图片均匀分布 */
+    display: flex;
+    width: 95%; /* 容器占满宽度 */
+    left: 4%;
+    align-items: center;
+    bottom: 0;
+    position: absolute; /* 固定在底部 */
+    padding: 10px 0; /* 添加顶部和底部的间距 */
+    z-index: 1;
+    
+}
+.other-pic a {
+    display: block; /* 使 a 标签成为块级元素，确保其覆盖整个图片 */
+    width: calc(12.5% - 10px);
+    
+}
+
+.other-pic a img {
+    width: 98%;
+    height: 250px; /* 保持宽高比 */
+    margin: 5px; /* 图片间距 */
+
+    
+}
+
+
+.text-container {
+    position: absolute; /* 覆盖在背景上方 */
+    top: 10%; /* 距离顶部 10% */
+    left: 5%; /* 距离左侧 5% */
+    color: white; /* 文字颜色设置为白色 */
+    z-index: 2; /* 确保文字在背景和图片上方 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 添加文字阴影提升可读性 */
+    max-width: 30%; /* 限制文字区域宽度 */
+    padding-top: 20px;
+}
+/*全局*/
+p{
+    font-family: "微软雅黑", Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 24px;
+    text-indent: 30px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /*导航栏*/
+  .nav.buttons{
+    gap: 30px;
+    display: flex;
+  }
+  
+  .navi{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    color: white;
+    height: 100px;
+  }
+  
+  .navi button {
+    background-color: hotpink; 
+    color: white;
+    border: none;
+    padding: 0px 10px;
+    cursor: pointer;
+    height: 50px;
+    width: 90px;
+    gap: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navi button:hover{
+    background-color: pink;
+    color:black;
+    border-radius: 14px;
+  }
+  
+  .navi button:active{
+    opacity: 0.7;
+  }
+  
+  .buttons{
+    margin-right: 16px;
+  }
+  
+  
+  .logo{
+    display: flex;
+    column-gap: 10px;
+    margin-left: 12px;
+    align-items: center;
+  }
+  
+  .box{
+    width: 60px;
+    border-radius: 16px;
+  }
+  
+  .text{
+    font-size: 22px;
+    font-weight: bold;
+  }
+.text-container2{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    z-index: 2;
+    color: white;
+
+}
+.btn{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    padding-top: 40px;
+}
+
+.btn button{
+    height: 50px;
+    width: 150px;
+    background-color: hotpink;
+    font-size: larger;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.15s;
+    font-size: 20px;
+}
+
+.btn button:hover{
+  opacity: 0.85;
+  border-radius: 10px;
+}
+
+.btn button:active{
+  opacity: 0.7;
+}
+
+
+.btn button a{
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    color: white;
+}

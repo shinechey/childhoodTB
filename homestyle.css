@@ -1,0 +1,109 @@
+.nav .buttons{
+
+    gap: 30px;
+    display: flex;
+    
+}
+/*全局*/
+p{
+    font-family: "微软雅黑", Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 24px;
+    text-indent: 30px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color:#333;
+  }
+  
+  
+  /*导航栏*/
+  .nav.buttons{
+    gap: 30px;
+    display: flex;
+  }
+  
+  .navi{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    color: white;
+    height: 100px;
+  }
+  
+  .navi button {
+    background-color: hotpink; 
+    color: white;
+    border: none;
+    padding: 0px 10px;
+    cursor: pointer;
+    height: 50px;
+    width: 90px;
+    gap: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navi button:hover{
+    background-color: pink;
+    color:black;
+    border-radius: 14px;
+  }
+  
+  .navi button:active{
+    opacity: 0.7;
+  }
+  
+  .buttons{
+    margin-right: 16px;
+  }
+  
+  
+  .logo{
+    display: flex;
+    column-gap: 10px;
+    margin-left: 12px;
+    align-items: center;
+  }
+  
+  .box{
+    width: 60px;
+    border-radius: 16px;
+  }
+  
+  .text{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /*脚注*/
+  footer {
+    background-color:#333;
+    color:white;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+  }
+  
+  footer::before,
+  footer::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1.5px;
+    background-color: #333;
+    margin: 10px auto;
+    transform: scaleY(1);
+    box-sizing: border-box;
+  }
+
+#carouselExampleCaptions{
+    height: 300px;
+}
+
+

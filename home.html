@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .carousel-item img{
+        width: 100%;
+        object-fit: cover;
+        height: 500px;
+      }
+
+      </style>
+
+    <title>童年百宝箱</title>
+    <style>
+        .selector-for-some-widget {
+            box-sizing: content-box;
+        }
+       </style>
+    <link rel="stylesheet" href="homestyle.css">
+  
+  </head>
+  <body>
+    
+    <div class="header">
+      <div class="navi">
+        <div class="logo">
+          <a href="home.html" target="_blank" style="text-decoration: none; color: inherit;">
+            <img src="images/百宝箱.png" class="box">
+          </a>
+          <div class="text">童年百宝箱</div>
+        </div>
+        <div class = "buttons">
+          <a href="fairytale.html"><button>童话</button></a>
+          <a href="game.html"><button>游戏</button> </a>
+          <a href="harry.html"><button>影视</button> </a>
+          <a href="cartoon.html"><button>动画</button> </a>
+          <a href="home.html"><button>首页</button> </a>
+        </div>
+      </div>
+    </div>
+    
+   <div class="container mt-5">
+        
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="harry.html">
+              <img src="pics/哈利波特大图.jpg" class="d-block w-100" alt="Slide 1"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>影视</h5>
+                    <p>你的童年都看过什么电视剧呢？</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+              <img src="pics/小红帽.jpg" class="d-block w-100" alt="Slide 2"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>童话故事</h5>
+                    <p>来看看我们精选的童话吧！</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img src="pics/zw2.jpg" class="d-block w-100" alt="Slide 3"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>游戏</h5>
+                    <p>还记得你玩过什么小游戏吗？</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<footer>
+  <p>© 2025 Childhood Treasure Box. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

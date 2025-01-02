@@ -1,0 +1,265 @@
+/*全局*/
+p{
+  font-family: "微软雅黑", Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 24px;
+  text-indent: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/story-bg.jpg);
+}
+
+
+/*导航栏*/
+.nav.buttons{
+  gap: 30px;
+  display: flex;
+}
+
+.navi{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  color: white;
+  height: 100px;
+}
+
+.navi button {
+  background-color: hotpink; 
+  color: white;
+  border: none;
+  padding: 0px 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 90px;
+  gap: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navi button:hover{
+  background-color: pink;
+  color:black;
+  border-radius: 14px;
+}
+
+.navi button:active{
+  opacity: 0.7;
+}
+
+.buttons{
+  margin-right: 16px;
+}
+
+
+.logo{
+  display: flex;
+  column-gap: 10px;
+  margin-left: 12px;
+  align-items: center;
+}
+
+.box{
+  width: 60px;
+  border-radius: 16px;
+}
+
+.text{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+/*封面*/
+.story-grid {
+  display: flex;
+  gap: 40px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.story-cover {
+  cursor: pointer;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+
+.story-cover:hover {
+  transform: scale(1.05);
+}
+
+.cover-title{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+
+/*故事页*/
+.story-page {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.story-content {
+  max-width: 800px;
+  text-align: justify;
+  margin: 20px 0;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  line-height: 24px;
+}
+
+
+/*音频*/
+/* 音频播放器容器 */
+.audio-player {
+  width: 100%;
+  max-width: 500px;
+  background-color: #f7f7f7;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* 播放器内容 */
+.player-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* 播放按钮样式 */
+.play-pause {
+  background-color: hotpink;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.play-pause:hover {
+  background-color: #4caf50;
+  transform: scale(1.1);
+}
+
+/* 进度条样式 */
+#progressBar {
+  flex-grow: 1;
+  margin: 0 10px;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#progressBar::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: hotpink;
+  cursor: pointer;
+}
+
+#progressBar:hover {
+  background: #ccc;
+}
+
+/* 时间显示样式 */
+.current-time, .duration {
+  font-size: 20px;
+  color: #555;
+}
+
+/* 音频标题样式 */
+.track-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*返回键*/
+.back-button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: hotpink;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  opacity: 0.85;
+}
+
+.back-button:active {
+  opacity: 0.7;
+}
+
+
+/*脚注*/
+footer {
+  color: #333;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+footer::before,
+footer::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1.5px;
+  background-color: #333;
+  margin: 10px auto;
+  transform: scaleY(1);
+  box-sizing: border-box;
+}
+
+
+
+
+

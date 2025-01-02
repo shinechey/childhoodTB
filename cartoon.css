@@ -1,0 +1,165 @@
+/*全局*/
+p{
+  font-family: "微软雅黑", Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 24px;
+  text-indent: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*导航栏*/
+.nav.buttons{
+  gap: 30px;
+  display: flex;
+}
+
+.navi{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  color: white;
+  height: 100px;
+}
+
+.navi button {
+  background-color: hotpink; 
+  color: white;
+  border: none;
+  padding: 0px 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 90px;
+  gap: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navi button:hover{
+  background-color: pink;
+  color:black;
+  border-radius: 14px;
+}
+
+.navi button:active{
+  opacity: 0.7;
+}
+
+.buttons{
+  margin-right: 16px;
+}
+
+
+.logo{
+  display: flex;
+  column-gap: 10px;
+  margin-left: 12px;
+  align-items: center;
+}
+
+.box{
+  width: 60px;
+  border-radius: 16px;
+}
+
+.text{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+
+/*格局*/
+.body-grid{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 10px;
+  margin-top: 20px;
+}
+
+
+/*缩略图*/
+.thumbnail {
+  width: 100%;
+  object-fit: contain;
+}
+
+.thumbnail-row{
+  margin-bottom: 12px;
+}
+
+.thumbnail:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.thumbnail:active{
+  opacity: 0.7;  
+}
+
+
+/*描述*/
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.video-stats{
+  font-weight: 400px;
+  font-size: 10px;
+  color: rgb(96, 96, 96);
+}
+
+.video-title{
+  margin-top: 0px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 8px;
+  margin-bottom: 12px;
+}
+
+.video-title:hover{
+  cursor: pointer;
+  color: hotpink;
+}
+
+.video-title:active{
+  opacity: 0.7;  
+}
+
+
+/*脚注*/
+footer {
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+footer::before,
+footer::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1.5px;
+  background-color: #333;
+  margin: 10px auto;
+  transform: scaleY(1);
+  box-sizing: border-box;
+}
+
